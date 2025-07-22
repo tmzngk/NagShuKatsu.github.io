@@ -28,6 +28,7 @@ body {
 
 img {
     max-width: 100%;
+    image-orientation: from-image; /* Exifを使って正しい向きに直す */
 }
 
 .header-inner {
