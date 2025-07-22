@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/* --- 趣味紹介セクション --- */
+.my-hoby {
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+  line-height: 1.9;
+}
+
+.my-hoby .italic {
+  font-style: italic;
+  color: #228b22;
+}
+
+/* --- スライドショー全体 --- */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- メイン画像表示 --- */
+.show {
+  position: relative;
+  text-align: center;
+  width: auto;
+  height: 60vh;
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: bottom;
+}
+
+.show::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: inset 0 0 30px 40px #fff8dc;
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  border-radius: 8%;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+/* --- スライダーコントロール部 --- */
+.img-slider-inner {
+  width: 100%;
+  margin: 0 auto 80px;
+}
+
+.img-slider-inner ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 9px 0;
+  text-align: center;
+  user-select: none;
+}
+
+.img-slider-inner li {
+  cursor: pointer;
+  padding: 9px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.img-slider-inner li:hover {
+  background: #f8f8f8;
+}
+
+#play, #pause {
+  width: 140px;
+  border: 1px solid #dedede;
+}
+
+#prev, #next {
+  width: 60px;
+}
+
+/* --- サムネイル画像リスト --- */
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap; /* 折り返し */
+  justify-content: center;
+  gap: 5px; /* サムネイル同士の間隔 */
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: auto; /* autoにして */
+  max-width: 100%; /* はみ出し防止 */
+}
+
+.thumbnails li {
+  width: 56px; /* 明示的に幅を固定する */
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+.thumbnails li:hover,
+.thumbnails li.current {
+  opacity: 1;
+}
+
+.thumbnails img {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+/* --- 非表示クラス --- */
+.hidden {
+  display: none;
+}

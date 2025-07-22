@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* タイトル */
+.my-skill {
+    max-width: 1200px;
+    width: 90vw;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    line-height: 1.9;
+}
+
+/* アコーディオン全体 */
+.accordion {
+    max-width: 1200px;
+    width: 90vw;
+    margin: 30px auto 90px auto;
+}
+
+/* 各々のアコーディオンのタイトルとコンテンツ */
+.item {
+    border: 1px solid #deb887;
+    border-radius: 9px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* アコーディオンのタイトル */
+.accordion-title {
+    position: relative;
+    padding: 15px 60px 15px 20px;
+    font-weight: bold;
+    background-color: #bdb76b;
+    border-radius: 9px 0 0 0;
+    cursor: pointer;
+}
+
+.accordion-title::before,
+.accordion-title::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-color: #808000;
+    width: 20px;
+    height: 4px;
+    transition: all 0.3s;
+}
+
+/* 開ボタン */
+.accordion-title::after {
+    transform: rotate(90deg);
+}
+
+/* コンテンツ */
+.accordion-content {
+    padding: 0 20px 15px 20px;
+    border-radius: 0 0 9px 0;
+    display: none;
+    cursor: pointer;
+}
+
+.accordion-content.is-open {
+display: block;
+}
+
+/* 閉ボタン */
+.item.is-active .accordion-title::before {
+    transform: rotate(180deg);
+}
+
+.item.is-active .accordion-title::after {
+    transform: rotate(180deg);
+    opacity: 0;
+}

@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+.main-page-area {
+    height: calc(100vh - 110px);
+    background-image: url(../images/index/amaharashi.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+/* カバー部分 */
+.main-page-text {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-bottom: 60px;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px #4b0082;
+}
+
+.main-page-text h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 55px;
+    line-height: 77px;
+}
+
+.main-page-text p {
+    font-size: 19px;
+    margin-top: 23px;
+}
+
+/* モーダルウィンドウ部分 */
+#open-modal,
+#close-modal {
+    background-color: #bdb76b;
+    border: #808000;
+    border-radius: 5px;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+#window-motivation {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+}
+
+#detail-motivation {
+    width: 70%;
+    max-width: 800px;
+    height: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease; /* アニメーション用 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#detail-motivation p{
+    line-height: 1.9;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#detail-motivation button {
+    display: inline-block; /* ボタンらしく見せる */
+    margin-top: 20px; /* ボタンと文章との余白 */
+    padding: 5px 9px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+    color: #4b0082;
+    background-color:#bdb76b;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 #4b0082; /* 影の太さ・色 */
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#detail-motivation button:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.about-me {
+    max-width: 1200px;
+    margin: 60px auto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.9;
+    text-align: center;
+}
+
+.gyomu button {
+    all: unset; /* いったん全部リセット */
+    display: inline-block; /* ボタンらしく見せる */
+    text-align: center;
+    padding: 5px 9px;
+    margin: 0 4px;
+    font-size: 19px;
+    font-weight: 500;
+    font-style: italic;
+    color: #4b0082;
+    background-color:#bdb76b;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 #4b0082;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.gyomu button:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+@media (max-width: 768px) {
+    .main-page-area {
+        height: calc(100vh - 50px); /* headerの高さを引く */
+        background-image: url(../images/index/amaharashi.jpg);
+        align-items: flex-start;
+    }
+
+    .main-page-text {
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+
+    .main-page-text h1 {
+        font-size: 35px;
+        line-height: 48px;
+    }
+    
+    .main-page-text p {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .about-me {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .about-me p {
+        text-align: left;
+    }
+}
