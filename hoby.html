@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="私の自己紹介をします">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/hamburger-menu.js" defer></script>
+    <script src="./js/img_slider.js" defer></script>
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/hoby.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>自己紹介</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a class="header-logo" href="./index.html">
+                <img src="./images/common/logo-manekineko.png" alt="jikoshokai">
+            </a>
+            <input type="checkbox" id="hamburger" class="hamburger-menu__input"/>
+            <label for="hamburger" class="hamburger-menu_open"><span></span></label>
+            <div class="header-site-menu">
+                <nav class="site-menu">
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./skill.html">スキル</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="hoby-main">
+        <div class="my-hoby">
+            <h1>わたくしの主な趣味</h1>
+            <p>たくさんありますが、その中の主な趣味です</p>
+            <p class="italic">━━━ 家庭菜園・寺社巡り・山登り ━━━</p>
+        </div>
+        <div class="container">
+            <div class="img-slider">
+                <div class="show">
+                    <img class="shadow">
+                </div>
+                <ul class="thumbnails"></ul>
+                <div class="img-slider-inner">
+                    <ul>
+                        <li id="play">開始</li>
+                        <li id="pause" class="hidden">停止</li>
+                        <li id="prev">&lt;</li>
+                        <li id="next">&gt;</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <nav class="site-menu">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./skill.html">スキル</a></li>
+            </ul>
+        </nav>
+        <a class="footer-logo" href="./index.html">
+            <img src="./images/common/logo-manekineko.png" alt="jikoshokai">
+        </a>
+        <p class="footer-mail">bishopmetal88@gmail.com</p>
+        <p class="copyright"><small>&copy;自己紹介</small></p>   
+    </footer>
+</body>
+</html>

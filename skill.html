@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="私の自己紹介をします">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/hamburger-menu.js" defer></script>
+    <script src="./js/skill_accordion.js" defer></script>
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/skill.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>自己紹介</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a class="header-logo" href="./index.html">
+                <img src="./images/common/logo-manekineko.png" alt="jikoshokai">
+            </a>
+            <input type="checkbox" id="hamburger" class="hamburger-menu__input"/>
+            <label for="hamburger" class="hamburger-menu_open"><span></span></label>
+            <div class="header-site-menu">
+                <nav class="site-menu">
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./hoby.html">趣味</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="my-skill">
+            <h1>主な経歴とスキル</h1>
+        </div>
+        <dl class="accordion js-accordion">
+            <div class="item js-accordion-trigger">
+                <dt class="accordion-title">各種事務業務他の効率化・自動化</dt>
+                <dd class="accordion-content">各部署の業務効率化・自動化を目的に、Python、GAS
+                （一部Appsheetを含む）、VBAにて作成を行う。</dd>
+            </div>
+            <div class="item js-accordion-trigger">
+                <dt class="accordion-title">求人サイトの構築</dt>
+                <dd class="accordion-content">介護系求人サイトをさくらVPS上で運用することを目的に、
+                Python(Flask)での作成を行う。</dd>
+            </div>
+            <div class="item js-accordion-trigger">
+                <dt class="accordion-title">勤怠システムの構築</dt>
+                <dd class="accordion-content">自社勤怠システムのExcelの代替として、さくらVPS上でのWebアプリ運用を目的に、
+                Python(Flask)で勤怠システムの構築と保守運営を行う。</dd>
+            </div>
+            <div class="item js-accordion-trigger">
+                <dt class="accordion-title">企業サイトのWordPressによる作成</dt>
+                <dd class="accordion-content">WebページのWordPressによるHTML、CSS（含Bootstrap）、
+                JavaScript（含jQuery）によるコーディングを行う。</dd>
+            </div>
+            <div class="item js-accordion-trigger">
+                <dt class="accordion-title">勤怠管理業務における業務効率化</dt>
+                <dd class="accordion-content">業務用アプリからGoogleスプレッドシートに、給与計算コーディング・
+                計算結果への反映および勤怠管理、災害時安否確認等のための効率化（GAS、Python、一部アプリのAPI、VBA、
+                ExcelおよびGoogleSpreadSheet関数を使用（官公庁および各地方自治体ホームページから災害情報を
+                スクレイピングして全国在宅社員にGmail等で当該社員を自動抽出して安否確認））を行う。</dd>
+            </div>
+            <div class="item js-accordion-trigger">
+                <dt class="accordion-title">官公庁ストレスチェック集計に係る業務効率化</dt>
+                <dd class="accordion-content">官公庁ストレスチェック集計に係る業務効率化（ExcelVBA/Excel関数、
+                WSH（VBScript）、Python（openpyxl/Kivy/Pandasを中心に使用））に当たる。</dd>
+            </div>
+        </dl>
+    </main>
+
+    <footer class="footer">
+        <nav class="site-menu">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./hoby.html">趣味</a></li>
+            </ul>
+        </nav>
+        <a class="footer-logo" href="./index.html">
+            <img src="./images/common/logo-manekineko.png" alt="jikoshokai">
+        </a>
+        <p class="footer-mail">bishopmetal88@gmail.com</p>
+        <p class="copyright"><small>&copy;自己紹介</small></p>   
+    </footer>
+</body>
+</html>

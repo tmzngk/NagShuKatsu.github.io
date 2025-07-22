@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="私の自己紹介をします">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/hamburger-menu.js" defer></script>
+    <script src="./js/self_introduction.js" defer></script>
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>自己紹介</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a class="header-logo" href="./index.html">
+                <img src="./images/common/logo-manekineko.png" alt="jikoshokai">
+            </a>
+            <input type="checkbox" id="hamburger" class="hamburger-menu__input"/>
+            <label for="hamburger" class="hamburger-menu_open"><span></span></label>
+            <div class="header-site-menu">
+                <nav class="site-menu">
+                    <ul>
+                        <li><a href="./hoby.html">趣味</a></li>
+                        <li><a href="./skill.html">スキル</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main-page-area">
+            <div class="main-page-text">
+                <h1>わたくしの自己紹介</h1>
+                <p>貴社への志望動機は</p>
+            </div>
+        </div>
+        <div class="about-me">
+            <p>
+            在宅勤務を始めてから、業務内容やその折々の事案に対して<br>
+            調査したりしながらの業務を行うことに対して喜びを感じています。<br><br>
+            特に、プログラミングに関しては作りあげていく業務の楽しさを知り、<br>
+            今ではPython、JavaScriptを中心に行ってきています。<br><br>
+            そのため、
+            <span class="gyomu">
+                <button id="open-modal">貴社の求人の業務内容</button>
+            </span>
+            を拝見しまして、是非、挑戦したいとの思いに至っています。</p>
+        </div>
+        <div id="detail-motivation">
+            <p>
+                ＨＴＭＬやＣＳＳを使って<br>
+                ｗｅｂサイトのコーディング全般<br>
+                およびＰＳＤ・ａｉデータをもとにｗｅｂサイトの実装
+            </p>
+            <button id="close">閉じる</button>
+        </div>
+        <div id="window-motivation"></div>
+    </main>
+
+    <footer class="footer">
+        <nav class="site-menu">
+            <ul>
+                <li><a href="./hoby.html">趣味</a></li>
+                <li><a href="./skill.html">スキル</a></li>
+            </ul>
+        </nav>
+        <a class="footer-logo" href="./index.html">
+            <img src="./images/common/logo-manekineko.png" alt="jikoshokai">
+        </a>
+        <p class="footer-mail">bishopmetal88@gmail.com</p>
+        <p class="copyright"><small>&copy;自己紹介</small></p>   
+    </footer>
+</body>
+</html>
